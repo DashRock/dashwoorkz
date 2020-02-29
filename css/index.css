@@ -1,12 +1,7 @@
-.main-container {
-    position:relative;
-    width:95%;
-    height:auto;
-    margin: 0 auto;
-}
+
 
 .main-header {
-    position:absolute;
+    position:relative;
     top:0;
     left:0;
     padding:1vw 0;
@@ -39,14 +34,14 @@
     position:relative;
     border: 0.1vw inset purple;
     background-color:#26e6ff;
-    filter:drop-shadow(0.1vw 0.1vw 0.1vw #1e83ff);
+    filter:drop-shadow(0.1rem 0.1rem 0.1rem#1e83ff);
     transition: all 500ms ease-in;
 }
 
 .hamb:hover {
     border: 0.1vw inset #26e6ff;
     background-color:purple;
-    filter:drop-shadow(-0.1vw -0.1vw -0.1vw #0a3887);
+    filter:drop-shadow(0.05rem 0.05rem 0.12rem#4400ff);
 }
 
 .hamb-1,

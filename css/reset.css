@@ -17,3 +17,104 @@ body {
     height:100vh;
 }
 
+.main-container {
+    position:relative;
+    width:95%;
+    height:auto;
+    margin: 0 auto;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:space-evenly;
+}
+
+.brand-content {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas:'info mCont' 'info mCont';
+    border: 0.1vw inset green;
+}
+
+.dashwoorkz-info {
+    position:relative;
+    grid-area:info;
+    grid-column:1 / 2;
+    grid-row: 1 / 2;
+    border: 0.1vw inset orange;
+}
+
+.main-content {
+    position:relative;
+    display:grid;
+    width:100%;
+    height:50vw;
+    grid-area:mCont;
+    grid-column:2 / 3;
+    grid-row: 1 / 2;
+}
+/* .content {
+    position:relative;
+    display:grid;
+    width:inherit;
+    height:inherit;
+} */
+
+
+.examples-info {
+    display:none;
+    border: 0.1vw inset green;
+}
+
+.brand-info {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:'brand' 'cBox';
+    border: 0.1vw inset green;
+}
+
+.brand {
+    position:relative;
+    grid-area:brand;
+    grid-column:1 / 2;
+    grid-row: 1 / 2;
+    border: 0.1vw inset red;
+    display:flex;
+}
+
+.brand-badge {
+    position:relative;
+    width:35%;
+    height:auto;
+    border-right: 0.1vw inset lightsteelblue;
+}
+.brand-billboard {
+    position:relative;
+    width:65%;
+    height:auto;
+    
+
+}
+
+.content-box {
+    position:relative;
+    grid-area:cBox;
+    grid-column:1 / 2;
+    grid-row: 2 / 3;
+    border: 0.1vw inset blue;
+}
+
+.footer {
+    position:relative;
+    bottom:0;
+    left:0;
+    padding:1vw 0;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:nowrap;
+    border: 0.1vw inset orangered;
+
+}
+
