@@ -1,0 +1,94 @@
+.main-container {
+    position:relative;
+    width:95%;
+    height:auto;
+    margin: 0 auto;
+}
+
+.main-header {
+    position:absolute;
+    top:0;
+    left:0;
+    padding:1vw 0;
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:no-wrap;
+
+}
+
+.hamburger {
+    position:relative;
+    width:4vw;
+    height:4vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+   
+}
+
+.hamb {
+    width:100%;
+    height:1vw;
+    position:relative;
+    border: 0.1vw inset purple;
+    background-color:#26e6ff;
+}
+
+.hamb:hover {
+    border: 0.1vw inset #26e6ff;
+    background-color:purple;
+}
+
+.hamb-1,
+.hamb-2,
+.hamb-3 {
+    position:relative;
+   }
+
+.hamb-1 {
+    border-radius: 1vw 1vw 0 0;
+}
+.hamb-2 {
+    border-radius: 0.25vw 0.25vw;
+}
+.hamb-3 {
+    border-radius: 0 0 1vw 1vw;
+}
+
+.btn {
+    position:relative;
+    width:10vw;
+    height:2vw;
+    text-align:center;
+    letter-spacing:0.1vw;
+    font-weight:700;
+    font-size:1.2vw;
+    border: 0.2vw inset #b81fff;
+    background-color:#f5dea9;
+    box-shadow: 0.025vw 0.05vw 0.05vw 0.05vw #20ffbc;
+    margin-left:0.5vw;
+    -webkit-text-fill-color:#20ffbc;
+    -webkit-text-stroke: 0.075vw #b81fff;
+    
+
+}
+
+.header-nav:first-child {
+    margin-left:0;
+}
+
+#headerNavBtn-1:after {
+    content:"Home";
+}
+#headerNavBtn-2:after {
+    content:"Services";
+}
+#headerNavBtn-3:after {
+    content:"Examples";
+}
+#headerNavBtn-4:after {
+    content:"Sites";
+}
