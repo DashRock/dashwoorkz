@@ -28,35 +28,67 @@
     transform:rotate(360deg);
 }
 
-.hamb {
+.hamb1,
+.hamb2 {
     width:100%;
     height:1vw;
     position:relative;
-    border: 0.1vw inset purple;
-    background-color:#26e6ff;
-    filter:drop-shadow(0.1rem 0.1rem 0.1rem#1e83ff);
     transition: all 500ms ease-in;
 }
 
-.hamb:hover {
+.hamb1 {
+    border: 0.1vw inset purple;
+    background-color:#26e6ff;
+    filter:drop-shadow(0.1rem 0.1rem 0.1rem#1e83ff);
+}
+
+.hamb1:hover {
     border: 0.1vw inset #26e6ff;
     background-color:purple;
     filter:drop-shadow(0.05rem 0.05rem 0.12rem#4400ff);
 }
 
-.hamb-1,
-.hamb-2,
-.hamb-3 {
+.hamb2 {
+    border: 0.1vw inset #6e32f0;
+    background-color:#ff7a33;
+    filter:drop-shadow(0.1rem 0.1rem 0.1rem#1dff52);
+}
+#hamB2 {
+    display:none;
+}
+#hamB1 {
+    display:flex;
+}
+
+#hamB1, #hamB2 {
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+
+.hamb2:hover {
+    border: 0.1vw inset #156bff;
+    background-color:#f2f52b;
+    filter:drop-shadow(0.05rem 0.05rem 0.12rem#f226c9);
+}
+
+.hamb1-1,
+.hamb1-2,
+.hamb1-3,
+.hamb2-1,
+.hamb2-2,
+.hamb2-3 {
     position:relative;
    }
 
-.hamb-1 {
+.hamb1-1, .hamb2-1 {
     border-radius: 1vw 1vw 0 0;
 }
-.hamb-2 {
+.hamb1-2, .hamb2-2 {
     border-radius: 0.25vw 0.25vw;
 }
-.hamb-3 {
+.hamb1-3, .hamb2-3 {
     border-radius: 0 0 1vw 1vw;
 }
 
@@ -88,9 +120,9 @@
 }
 
 .btn:focus {
-    
+    background-color:#20ffbc;
     -webkit-text-fill-color:#b81fff;
-    -webkit-text-stroke: 0.075vw #20ffbc;
+    -webkit-text-stroke: 0.075vw #f5dea9;
     border-radius:15%;
 }
 
@@ -108,11 +140,15 @@
     content:"Home";
 }
 #headerNavBtn-2:after {
-    content:"Services";
+    content:"Web Dev";
 }
 #headerNavBtn-3:after {
-    content:"Examples";
+    content:"Hosting";
 }
 #headerNavBtn-4:after {
-    content:"Sites";
+    content:"DNS";
+}
+
+#headerNavBtn-5:after {
+    content:"Linux";
 }
