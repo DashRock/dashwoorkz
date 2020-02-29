@@ -42,6 +42,32 @@ document.getElementById('headerNavBtn-5').addEventListener('click', () => {
     document.getElementById('linuxInfo').style.display = "none";
 })
 
+/* Side Navigation Toggle */
+document.getElementById('sideNavBtn-1').addEventListener('click', () => {
+    document.getElementById('buttonStyles').style.display = "grid";
+    document.getElementById('animationStyles').style.display = "none";
+    document.getElementById('formStyles').style.display = "none";
+    document.getElementById('cardStyles').style.display = "none";
+})
+document.getElementById('sideNavBtn-2').addEventListener('click', () => {
+    document.getElementById('buttonStyles').style.display = "none";
+    document.getElementById('animationStyles').style.display = "grid";
+    document.getElementById('formStyles').style.display = "none";
+    document.getElementById('cardStyles').style.display = "none";
+})
+document.getElementById('sideNavBtn-3').addEventListener('click', () => {
+    document.getElementById('buttonStyles').style.display = "none";
+    document.getElementById('animationStyles').style.display = "none";
+    document.getElementById('formStyles').style.display = "grid";
+    document.getElementById('cardStyles').style.display = "none";
+})
+document.getElementById('sideNavBtn-4').addEventListener('click', () => {
+    document.getElementById('buttonStyles').style.display = "none";
+    document.getElementById('animationStyles').style.display = "none";
+    document.getElementById('formStyles').style.display = "none";
+    document.getElementById('cardStyles').style.display = "grid";
+})
+
 /* Hamburger Menu Toggle */
 
 document.getElementById('hamB1').addEventListener('click', () => {

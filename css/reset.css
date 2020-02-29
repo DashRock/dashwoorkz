@@ -25,7 +25,7 @@ body {
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:space-evenly;
+    /* align-items:center; */
 }
 
 .brand-content {
@@ -51,9 +51,7 @@ body {
     display:none;
     width:100%;
     height:100%;
-    background-image:url('https://i.pravatar.cc/360');
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-color:#bbe9f0;
     transition:all 1000ms ease-in;
 }
 
@@ -202,4 +200,232 @@ body {
 }
 
 
+#formStyle1 {
+    position:relative;
+    top:0.3vw;
+    left:0.3vw;
+    width:75%;
+    height:16vw;
+    border:0.2vw inset #24bdfa;
+    background-color:rgba(247,36,113, 0.5);
+    filter:drop-shadow(0.2vw 0.3vw 0.4vw rgba(245,207,37, 0.5));
+    border-radius: 0.3vw 0.4vw 0.5vw 0.6vw;
+    margin:0 auto;
+
+}
+
+#formStyle1 form {
+    width:100%;
+    height:100%;
+    background-color:rgba(247,162,26, 0.5);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    margin:0 auto;
+    padding:0.25vw;
+}
+
+
+#formStyle1 form h1 {
+    position:relative;
+    -webkit-text-fill-color:#3cd98b;
+    -webkit-text-stroke:0.05vw #00913a;
+}
+#formStyle1 form h1:after {
+    content:"Subscribe Now!!";
+}
+
+
+#formStyle1 form h1:hover {
+    position:relative;
+    -webkit-text-fill-color:#9ecdf0;
+    -webkit-text-stroke:0.05vw #0b4d99;
+}
+
+
+input[type="text"] {
+    font-weight:700;
+    font-family:righteous, sans-serif;
+    letter-spacing: 0.1vw;
+    -webkit-text-fill-color:#f7d46b;
+    -webkit-text-stroke: 0.1vw #6cf5f7;
+    text-align:center;
+}
+input[type="email"] {
+    font-weight:700;
+    font-family:poppins, sans-serif;
+    letter-spacing: 0.1vw;
+    -webkit-text-fill-color:#fc5956;
+    -webkit-text-stroke: 0.1vw #5956fa;
+    text-align:center;
+}
+
+input:focus {
+    background-color:#f0e2bb;
+    border:0.1vw dotted #2ad1c6;
+}
+input:hover {
+    background-color:#21cc88;
+    border:0.2vw dotted #f0e2bb;
+    letter-spacing: 0.1vw;
+}
+
+button[type="submit"] {
+    font-weight:700;
+    font-family:"Josefin Sans", sans-serif;
+    letter-spacing: 0.1vw;
+    -webkit-text-fill-color:#a2bfeb;
+    -webkit-text-stroke: 0.1vw #1244b8;
+    font-size:1.2vw;
+    background-color:#ced5f0;
+    border:0.2vw dotted #0a79a8;
+    padding:0.2vw;
+}
+
+button[type="submit"]:after {
+    content:"Get Newsletter";
+}
+
+button[type="submit"]:hover {
+    background-color:#aeebe9;
+    border:0.2vw dotted #0b868f;
+}
+.card-styles {
+    position:relative;
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    display:grid;
+    justify-content: center;
+}
+
+#cardStyle1 {
+    position:relative;
+    top:0vw;
+    left:0.5vw;
+    width: 25vw;
+    height:30vw;
+    border:0.2vw solid green;
+    background-image:url('../imgs/img_avatar.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin:0 auto;
+    text-align:center;
+
+}
+
+.card-header,
+.card-footer {
+    -webkit-text-fill-color:#fcceae;
+    -webkit-text-stroke:0.1vw #3c9165;
+    width:100%;
+    height:2vw;
+    background-color:#e8b7eb;
+    font-weight:700;
+    font-family:righteous, sans-serif;
+    letter-spacing:0.1vw;
+}
+
+.card-header {
+    position:absolute;
+    top:0;
+    left:0;
+}
+.card-footer {
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.button-styles,
+.animation-styles,
+.form-styles,
+.card-styles {
+    display:none;
+}
+
+.form-group {
+    margin-bottom:0.2vw;
+    height:3.5vw;
+}
+
+label {
+    -webkit-text-fill-color:#a2bfeb;
+    -webkit-text-stroke: 0.1vw #1244b8;
+    letter-spacing:0.1vw;
+}
+
+.form-styles{
+    position:relative;
+    transform:translate(0%, -80%);
+}
+
+.card-styles{
+    position:relative;
+    transform:translate(0%, -17%);
+}
+
+.animation-styles{
+    position:relative;
+    transform:translate(0%, -60%);
+    background-image:url('https://i.pravatar.cc/800');
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    height:100%;
+}
+
+.button-styles{
+    position:relative;
+    transform:translate(0%, -90%);
+}
+
+.btn-styles-nav-1-btn {
+    position:relative;
+    width:3vw;
+    height:3vw;
+    border-radius:50%;
+    border:0.2vw dotted #9a1a9c;
+    background-color:#ebceea;
+    -webkit-text-fill-color:#f70fd8;
+    -webkit-text-stroke: 0.1vw #d433c7;
+    margin-left:0.2vw;
+
+}
+
+.btn-styles-nav-1-btn:hover {
+    border:0.2vw dotted #10ad49;
+    background-color:#ebf5bc;
+    -webkit-text-fill-color:#e68f85;
+    -webkit-text-stroke: 0.1vw#160ef0;
+    filter:drop-shadow(0.1vw 0.2vw 0.3vw #20fa24);
+}
+
+.btn-styles-nav-1-btn:focus {
+    border:0.2vw dotted #0bb6c2;
+    background-color:#dcbcf5;
+    -webkit-text-fill-color:#f0470e;
+    -webkit-text-stroke: 0.1vw#e6d9a6;
+    filter:drop-shadow(0vw 0.4vw 0.5vw #d60bd6);
+    outline-color:#d608cc;
+    outline-width:0.2vw;
+    outline-style:dotted;
+    outline-offset:-0.3vw;
+}
+
+.btn-styles-nav-1:first-child {
+    margin-left:0;
+}
+
+.btn-styles-nav-1 {
+    margin:0 auto;
+    width:100%;
+    height:5vw;
+    padding:0.2vw;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    transform:translateY(-270%);
+}
 
