@@ -1,3 +1,5 @@
+
+/* Site Page Toggle */
 document.getElementById('headerNavBtn-3').addEventListener('click', () => {
     document.getElementById('examplesInfo').style.display = "grid";
     document.getElementById('brandInfo').style.display = "none";
@@ -40,6 +42,7 @@ document.getElementById('headerNavBtn-5').addEventListener('click', () => {
     document.getElementById('linuxInfo').style.display = "none";
 })
 
+/* Hamburger Menu Toggle */
 
 document.getElementById('hamB1').addEventListener('click', () => {
     

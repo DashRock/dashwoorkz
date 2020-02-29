@@ -92,12 +92,17 @@
     border-radius: 0 0 1vw 1vw;
 }
 
-.header-nav {
+.header-nav,
+.side-nav {
     position:relative;
     height:3vw;
     display:flex;
     justify-content:space-evenly;
     align-items:center;
+}
+
+.side-header {
+    padding-top:0.3vw;
 }
 
 .btn {
@@ -109,8 +114,25 @@
     font-weight:700;
     font-size:1.2vw;
     border: 0.2vw inset #b81fff;
-    background-color:#f5dea9;
-    box-shadow: 0.025vw 0.05vw 0.05vw 0.05vw #20ffbc;
+    background-color:rgb(245, 222, 169);
+    box-shadow: 0.025vw 0.05vw 0.05vw 0.05vw rgb(32, 255, 188);
+    margin-left:0.5vw;
+    -webkit-text-fill-color:#20ffbc;
+    -webkit-text-stroke: 0.075vw #b81fff;
+    transition: all 500ms ease-in;
+}
+
+.side-btn {
+    position:relative;
+    width:7vw;
+    height:2vw;
+    text-align:center;
+    letter-spacing:0.1vw;
+    font-weight:700;
+    font-size:1vw;
+    border: 0.2vw inset #b81fff;
+    background-color:rgb(245, 222, 169);
+    box-shadow: 0.025vw 0.05vw 0.05vw 0.05vw rgb(32, 255, 188);
     margin-left:0.5vw;
     -webkit-text-fill-color:#20ffbc;
     -webkit-text-stroke: 0.075vw #b81fff;
@@ -119,20 +141,23 @@
 
 }
 
-.btn:focus {
+.btn:focus,
+.side-btn:focus {
     background-color:#20ffbc;
     -webkit-text-fill-color:#b81fff;
     -webkit-text-stroke: 0.075vw #f5dea9;
     border-radius:15%;
 }
 
-.btn:hover {
+.btn:hover,
+.side-btn:hover {
     background-color:#a5d5ed;
     border: 0.2vw inset #26e6ff;
     box-shadow: 0.025vw 0.05vw 0.05vw 0.05vw #b81fff;
 }
 
-.header-nav:first-child {
+.header-nav:first-child ,
+.side-nav:first-child {
     margin-left:0;
 }
 
@@ -151,4 +176,18 @@
 
 #headerNavBtn-5:after {
     content:"Linux";
+}
+
+#sideNavBtn-1:after {
+    content:"Buttons";
+}
+#sideNavBtn-2:after {
+    content:"Animations";
+}
+
+#sideNavBtn-3:after {
+    content:"Forms";
+}
+#sideNavBtn-4:after {
+    content:"Cards";
 }

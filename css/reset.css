@@ -44,6 +44,7 @@ body {
     background-image:url('https://i.pravatar.cc/840');
     background-repeat:no-repeat;
     background-size:cover;
+    transition:background-image 500ms ease-in;
 }
 
 .about-box {
@@ -53,7 +54,7 @@ body {
     background-image:url('https://i.pravatar.cc/360');
     background-repeat:no-repeat;
     background-size:cover;
-
+    transition:all 1000ms ease-in;
 }
 
 .main-content {
@@ -68,33 +69,27 @@ body {
 .general-info {
     display:none;
     flex-direction:column;
-    /* border: 0.2vw inset teal; */
-
 }
 
 .examples-info {
     display:none;
     flex-direction:column;
-    /* border: 0.1vw inset green; */
 }
 
 .dns-info {
     display:none;
     flex-direction:column;
-    /* border: 0.1vw inset green; */
 }
 
 .linux-info {
     display:none;
     flex-direction:column;
-    /* border: 0.1vw inset green; */
 }
 
 .brand-info {
     display:grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas:'brand' 'cBox';
-    /* border: 0.1vw inset green; */
 }
 
 .brand {
@@ -102,7 +97,6 @@ body {
     grid-area:brand;
     grid-column:1 / 3;
     grid-row: 1 / 2;
-    /* border: 0.1vw inset red; */
     display:flex;
 }
 
@@ -111,9 +105,45 @@ body {
     width:35%;
     height:auto;
     border-right: 0.1vw inset lightsteelblue;
-    background-image:url('https://i.pravatar.cc/640');
+    background-image:url('../imgs/Dash_LaLonde.jpg');
     background-repeat:no-repeat;
     background-size:cover;
+    text-align:center;
+}
+
+.brand-name {
+    
+    top:0;
+    left:0;
+    border-bottom:0.2vw inset #2c4999;
+       
+}
+.brand-title {
+    
+    bottom:0;
+    left:0;
+    border-top:0.2vw inset #2c4999;
+        
+}
+
+.brand-name,
+.brand-title {
+    position:absolute;
+    background-color:rgba(245,222,169, 0.4);
+    -webkit-text-fill-color:rgba(32,255,188, 0.9);
+    -webkit-text-stroke:0.1vw #2c4999;
+    font-weight:700;
+    letter-spacing:0.1vw;
+    width:100%;
+    font-size:1.3vw;
+}
+
+
+.brand-name:after {
+    content:"Dash LaLonde";
+}
+.brand-title:after {
+    content:"Web Developer";
 }
 .brand-billboard {
     position:relative;
@@ -171,5 +201,5 @@ body {
     background-size:cover;
 }
 
-}
+
 
